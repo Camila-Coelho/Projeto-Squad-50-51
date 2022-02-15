@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- meta tags obrigatorias -->
+  <title>Edu.mobility</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="main.js"></script>
+  
+ 	 <script language="JavaScript">
+	
+	function validaRadio() {
+	  if (document.form1.rd1[0].checked == false 
+		&& document.form1.rd1[1].checked == false) {
+		alert('Por favor, selecione sua ocupação.');
+		return false;
+	  }
+	  return true;
+	}
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+		<a class="navbar-brand" href="index.html"  > <img width="15%" src="./img/edu.mobility - com slogan.png" alt="Logo da Edu.mobility"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse " id="collapsibleNavbar">
+		
+			<ul class="navbar-nav" >
+			<li class="nav-item">
+			  <a class="nav-link text-white" href="sobre.html"> Sobre </a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white" href="motorista.html">Motorista</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white" href="aluno.html">Aluno</a>
+			</li>  
+			<li class="nav-item">
+				<a class="nav-link text-white" href="contato.html">Contato</a>
+			  </li>    
+		  </ul>
+		
+		</div>  
+	  </nav>
+	<br>
+	<br>
+
+	
+	<div id="team-area ">
+	<div class ="container">
+	  <div class="row">
+		<div class="col-sm-6">
+		  <div class="card">
+			<div class="card-body">
+				<center>
+			  <h5 class="card-title"> <img width="30%"  src="./img/edu.mobility - com slogan.png" alt="Logo da Edu.mobility"></h5>
+			</center> 
+			<p> A plataforma edu.mobilyti surgiu a partir da necessidade de 
+				crianças e adolecentes com deficiencia física, concluirem o ensino médio.  </p>
+				
+				<p> A Edu.mobility traz a proposta de fazer uma conexão com motoristas que já realizam o 
+					transporte escolar de crianças e adolescentes e que desejam realizar um 
+					trabalho voluntário dentro de suas rotas (ou não) se comprometendo a levar e trazer 
+					um aluno que tem deficiência física (cadeirante ou não).
+				</p>
+
+				<p> Com essa ação pretendemos dar oportunidade a crianças ou adolescentes para que tenham
+					o mínimo, que e concluir seus estudos básicos e ter oportunidade de competir 
+					de forma igualitaria dentro do mercado de trabalho e transformando-os em pessoas capacitadas 
+					para galgar o que desejam para suas vidas.
+					
+				</p>
+				<p> Trazendo um momento presente de alegria e esperança e um futudo em que a deficiencia 
+					não seja um obstaculo e sim uma oportunidade de uma nova visão.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-sm-3">
+		  <div class="card">
+			<div class="card-body">
+				<center>
+			  <h3 class="card-title">  <img width="30px" src="./img/Login.png">  </h3> 
+			  <h3>Login</h3>
+			  <h6 >Já sou usuário </h6>
+			</center>
+			  <div class="container">
+				
+				<form>
+				  <div class="form-group">
+					<label for="email">E-mail:</label>
+					<input type="email" class="form-control" id="email" placeholder="Digite o e-mail" name="email">
+				 
+					<label for="pwd">Senha:</label>
+					<input type="password" class="form-control" id="pwd" placeholder="Digite a Senha" name="pswd">
+				  </div>
+				  <a href="novasenha.html">
+				  <i>Esqueceu login e senha?</i>
+				  </a>
+				  <br>
+				  <br>
+				  <button type="submit" class="btn btn-primary" id="Entrar" onclick="validador()">Entrar</button>
+				  
+				</form>
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-sm-3">
+		  <div class="card">
+			<div class="card-body">
+				<center>
+			  <h3 class="card-title"> <img width="10px" src="./img/mais.png">  <img width="30px" src="./img/Login.png"> </h3>
+				  <h3>Criar Conta</h3>
+			  <h6 class="mt-0">Novo usuário</h6>
+			</center>
+			  <div class="container">
+				
+				<form name="form1" method="post" onSubmit="return validaRadio();">
+				  <div class="form-group">
+					<label for="nome">Nome:</label>
+					<input type="nome" class="form-control" id="nome" placeholder="Digite o nome" name="nome">
+
+					<label for="email">E-mail:</label>
+					<input type="email" class="form-control" id="email2" placeholder="Digite o e-mail" name="email">
+				 
+					<label for="pwd">Senha:</label>
+					<input type="password" class="form-control" id="pwd2" placeholder="Digite a Senha" name="pswd">
+				  </div>
+				  	<h6> Escolha uma opção:</h6>
+				  <div class="custom-control custom-radio">
+					<input type="radio" class="custom-control-input" id="radio1" name="rd1" value="Aluno">
+					<label class="custom-control-label" for="radio1">Aluno</label>
+				  </div>
+				  <div class="custom-control custom-radio">
+					<input type="radio" class="custom-control-input" id="radio2" name="rd1" value="Motorista">
+					<label class="custom-control-label" for="radio2">Motorista</label>
+				   </div>
+				   <br>
+				   <label for="Telefone" >Telefone:</label>
+          		   <input type="tel" class="form-control" id="telefone" placeholder="Telefone com DDD" name="Telefone" >
+				   <br>
+
+				   <div class="form-group">
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+					  <label class="form-check-label" for="invalidCheck2">
+						Concordo com os termos e condições
+					  </label>
+					</div>
+				  </div>
+				  <button type="submit" class="btn btn-primary" onclick="validador2()">Cadastrar</button>
+
+				  
+
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		
+
+	
+	</div>
+</div>
+</div>
+
+<br><br><br><br><br><br>
+
+<footer class="text-center text-white fixed-bottom" style="background-color: #343a40;">
+	
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: #343a40;">
+		&copy;-2022 Copyright Direitos Reservados Recode Pro- Squad 50 - 51
+	  
+	</div>
+	<!-- Copyright -->
+  </footer>
+
+</body>
+
+
+
+</html>
